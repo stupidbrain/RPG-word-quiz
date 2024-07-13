@@ -1,0 +1,1335 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 10
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVRFilteringMode: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 1
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &1562324274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1562324276}
+  - component: {fileID: 1562324275}
+  m_Layer: 0
+  m_Name: DataController
+  m_TagString: dataController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1562324275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562324274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b413a513f0e7eb34babd3ed36bd6daa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allRoundData:
+  - name: Round0
+    EnemyHP: 50
+    PlayerHP: 50
+    timeLimitInSeconds: 60
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: o`( h`( to,
+      wordFreq: 19863
+      Highlighted: 1
+      answers:
+      - answerText: the
+        isCorrect: 1
+      - answerText: is
+        isCorrect: 0
+      - answerText: where
+        isCorrect: 0
+    - questionText: kai,
+      wordFreq: 9018
+      Highlighted: 0
+      answers:
+      - answerText: but
+        isCorrect: 0
+      - answerText: into
+        isCorrect: 0
+      - answerText: and
+        isCorrect: 1
+    - questionText: auvto,j &h, &o,
+      wordFreq: 5597
+      Highlighted: 0
+      answers:
+      - answerText: when
+        isCorrect: 0
+      - answerText: place
+        isCorrect: 0
+      - answerText: he/she/it/they
+        isCorrect: 1
+    - questionText: su,
+      wordFreq: 2908
+      Highlighted: 0
+      answers:
+      - answerText: he
+        isCorrect: 0
+      - answerText: she
+        isCorrect: 0
+      - answerText: you
+        isCorrect: 1
+    - questionText: de,
+      wordFreq: 2792
+      Highlighted: 1
+      answers:
+      - answerText: de
+        isCorrect: 0
+      - answerText: the
+        isCorrect: 0
+      - answerText: and
+        isCorrect: 1
+  - name: Round1
+    EnemyHP: 50
+    PlayerHP: 50
+    timeLimitInSeconds: 60
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: evn
+      wordFreq: 2752
+      Highlighted: 0
+      answers:
+      - answerText: in
+        isCorrect: 1
+      - answerText: and
+        isCorrect: 0
+      - answerText: the
+        isCorrect: 0
+    - questionText: evgw,
+      wordFreq: 2584
+      Highlighted: 0
+      answers:
+      - answerText: I
+        isCorrect: 1
+      - answerText: ago
+        isCorrect: 0
+      - answerText: me
+        isCorrect: 0
+    - questionText: eivmi,
+      wordFreq: 2462
+      Highlighted: 0
+      answers:
+      - answerText: me
+        isCorrect: 0
+      - answerText: I am/to be
+        isCorrect: 1
+      - answerText: I
+        isCorrect: 0
+    - questionText: le,gw
+      wordFreq: 2353
+      Highlighted: 0
+      answers:
+      - answerText: I am
+        isCorrect: 0
+      - answerText: I say
+        isCorrect: 1
+      - answerText: I go
+        isCorrect: 1
+    - questionText: eivj
+      wordFreq: 1767
+      Highlighted: 0
+      answers:
+      - answerText: into
+        isCorrect: 1
+      - answerText: aids
+        isCorrect: 0
+      - answerText: I am
+        isCorrect: 0
+  - name: Round2
+    EnemyHP: 80
+    PlayerHP: 50
+    timeLimitInSeconds: 80
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: ou`( ou`k( ou`c
+      wordFreq: 1623
+      Highlighted: 0
+      answers:
+      - answerText: life
+        isCorrect: 0
+      - answerText: ought
+        isCorrect: 0
+      - answerText: not
+        isCorrect: 1
+    - questionText: o[j( h[( o[
+      wordFreq: 1431
+      Highlighted: 1
+      answers:
+      - answerText: he/she/it
+        isCorrect: 0
+      - answerText: a/the
+        isCorrect: 0
+      - answerText: who/which
+        isCorrect: 1
+    - questionText: ou-toj( au[th( tou/to
+      wordFreq: 1387
+      Highlighted: 0
+      answers:
+      - answerText: love
+        isCorrect: 0
+      - answerText: true
+        isCorrect: 0
+      - answerText: this
+        isCorrect: 1
+    - questionText: qeo,j( &ou/( o`
+      wordFreq: 1317
+      Highlighted: 0
+      answers:
+      - answerText: Philo
+        isCorrect: 0
+      - answerText: Lord
+        isCorrect: 0
+      - answerText: God
+        isCorrect: 1
+    - questionText: o[ti
+      wordFreq: 1296
+      Highlighted: 1
+      answers:
+      - answerText: that/because
+        isCorrect: 1
+      - answerText: it
+        isCorrect: 0
+      - answerText: when
+        isCorrect: 0
+    - questionText: pa/j( pa/sa( pa/n
+      wordFreq: 1243
+      Highlighted: 0
+      answers:
+      - answerText: not
+        isCorrect: 0
+      - answerText: all/every
+        isCorrect: 1
+      - answerText: per
+        isCorrect: 0
+    - questionText: mh,
+      wordFreq: 1042
+      Highlighted: 0
+      answers:
+      - answerText: not
+        isCorrect: 1
+      - answerText: me
+        isCorrect: 0
+      - answerText: mother
+        isCorrect: 0
+    - questionText: ga,r
+      wordFreq: 1041
+      Highlighted: 0
+      answers:
+      - answerText: add
+        isCorrect: 0
+      - answerText: of
+        isCorrect: 0
+      - answerText: for
+        isCorrect: 1
+  - name: Round3
+    EnemyHP: 90
+    PlayerHP: 50
+    timeLimitInSeconds: 100
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: vIhsou/j
+      wordFreq: 917
+      Highlighted: 0
+      answers:
+      - answerText: Insult
+        isCorrect: 0
+      - answerText: Joshua/Jesus
+        isCorrect: 1
+      - answerText: Ixus
+        isCorrect: 0
+    - questionText: evk( evx
+      wordFreq: 914
+      Highlighted: 0
+      answers:
+      - answerText: out/from
+        isCorrect: 1
+      - answerText: exit
+        isCorrect: 0
+      - answerText: life
+        isCorrect: 0
+    - questionText: evpi,
+      wordFreq: 890
+      Highlighted: 0
+      answers:
+      - answerText: on/against
+        isCorrect: 1
+      - answerText: open
+        isCorrect: 0
+      - answerText: epoch
+        isCorrect: 0
+    - questionText: ku,rioj( &ou( o`
+      wordFreq: 717
+      Highlighted: 0
+      answers:
+      - answerText: road
+        isCorrect: 0
+      - answerText: house
+        isCorrect: 0
+      - answerText: lord
+        isCorrect: 1
+    - questionText: e;cw
+      wordFreq: 708
+      Highlighted: 0
+      answers:
+      - answerText: I
+        isCorrect: 0
+      - answerText: I am
+        isCorrect: 0
+      - answerText: to have
+        isCorrect: 1
+    - questionText: 'pro,j '
+      wordFreq: 700
+      Highlighted: 0
+      answers:
+      - answerText: for the sake of/at/towards
+        isCorrect: 1
+      - answerText: on/upon
+        isCorrect: 0
+      - answerText: above/up/onto
+        isCorrect: 0
+    - questionText: gi,nomai
+      wordFreq: 669
+      Highlighted: 1
+      answers:
+      - answerText: to know
+        isCorrect: 0
+      - answerText: to become
+        isCorrect: 1
+      - answerText: gym
+        isCorrect: 0
+    - questionText: dia,
+      wordFreq: 667
+      Highlighted: 0
+      answers:
+      - answerText: when
+        isCorrect: 0
+      - answerText: through/because of
+        isCorrect: 1
+      - answerText: against/towards
+        isCorrect: 0
+    - questionText: i[na
+      wordFreq: 663
+      Highlighted: 1
+      answers:
+      - answerText: to hinder
+        isCorrect: 0
+      - answerText: in order that
+        isCorrect: 1
+      - answerText: because
+        isCorrect: 0
+  - name: Round4
+    EnemyHP: 100
+    PlayerHP: 50
+    timeLimitInSeconds: 100
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: avpo,
+      wordFreq: 646
+      Highlighted: 1
+      answers:
+      - answerText: above
+        isCorrect: 0
+      - answerText: from
+        isCorrect: 1
+      - answerText: to
+        isCorrect: 0
+    - questionText: avlla,
+      wordFreq: 638
+      Highlighted: 0
+      answers:
+      - answerText: say
+        isCorrect: 0
+      - answerText: allow
+        isCorrect: 0
+      - answerText: but
+        isCorrect: 1
+    - questionText: e;rcomai
+      wordFreq: 632
+      Highlighted: 0
+      answers:
+      - answerText: I have
+        isCorrect: 0
+      - answerText: I live
+        isCorrect: 0
+      - answerText: I come
+        isCorrect: 1
+    - questionText: poie,w
+      wordFreq: 568
+      Highlighted: 0
+      answers:
+      - answerText: to do
+        isCorrect: 1
+      - answerText: poor
+        isCorrect: 0
+      - answerText: to work
+        isCorrect: 0
+    - questionText: ti,j( ti,
+      wordFreq: 555
+      Highlighted: 1
+      answers:
+      - answerText: he/she
+        isCorrect: 0
+      - answerText: who/what
+        isCorrect: 1
+      - answerText: anything/something
+        isCorrect: 0
+    - questionText: a;nqrwpoj( &ou& o`
+      wordFreq: 550
+      Highlighted: 0
+      answers:
+      - answerText: earth
+        isCorrect: 0
+      - answerText: man
+        isCorrect: 1
+      - answerText: ant
+        isCorrect: 0
+    - questionText: ti.j& ti.
+      wordFreq: 534
+      Highlighted: 1
+      answers:
+      - answerText: he/she
+        isCorrect: 0
+      - answerText: who/what
+        isCorrect: 0
+      - answerText: anything/something
+        isCorrect: 1
+    - questionText: Cristo,j( &ou/( o`
+      wordFreq: 529
+      Highlighted: 0
+      answers:
+      - answerText: Christ
+        isCorrect: 1
+      - answerText: Crisis
+        isCorrect: 0
+      - answerText: Quit
+        isCorrect: 0
+    - questionText: w`j
+      wordFreq: 504
+      Highlighted: 1
+      answers:
+      - answerText: who
+        isCorrect: 0
+      - answerText: as/like
+        isCorrect: 1
+      - answerText: or/may
+        isCorrect: 0
+    - questionText: eiv
+      wordFreq: 502
+      Highlighted: 1
+      answers:
+      - answerText: if
+        isCorrect: 1
+      - answerText: into
+        isCorrect: 0
+      - answerText: or
+        isCorrect: 0
+  - name: Round5
+    EnemyHP: 100
+    PlayerHP: 50
+    timeLimitInSeconds: 100
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: ou=n
+      wordFreq: 499
+      Highlighted: 1
+      answers:
+      - answerText: you
+        isCorrect: 0
+      - answerText: with
+        isCorrect: 0
+      - answerText: therefore
+        isCorrect: 1
+    - questionText: o`ra,w
+      wordFreq: 493
+      Highlighted: 0
+      answers:
+      - answerText: mouth
+        isCorrect: 0
+      - answerText: oral
+        isCorrect: 0
+      - answerText: to see
+        isCorrect: 1
+    - questionText: kata,
+      wordFreq: 473
+      Highlighted: 0
+      answers:
+      - answerText: catalogue
+        isCorrect: 0
+      - answerText: against/according to
+        isCorrect: 1
+      - answerText: with
+        isCorrect: 0
+    - questionText: meta,
+      wordFreq: 469
+      Highlighted: 0
+      answers:
+      - answerText: with/after
+        isCorrect: 1
+      - answerText: mother
+        isCorrect: 0
+      - answerText: change
+        isCorrect: 0
+    - questionText: avkou,w
+      wordFreq: 428
+      Highlighted: 1
+      answers:
+      - answerText: across
+        isCorrect: 0
+      - answerText: to hear
+        isCorrect: 1
+      - answerText: to find
+        isCorrect: 0
+    - questionText: polu,j( tollh,( polu,
+      wordFreq: 416
+      Highlighted: 0
+      answers:
+      - answerText: earth
+        isCorrect: 0
+      - answerText: much/many
+        isCorrect: 1
+      - answerText: people
+        isCorrect: 0
+    - questionText: di,dwmi
+      wordFreq: 415
+      Highlighted: 1
+      answers:
+      - answerText: two
+        isCorrect: 0
+      - answerText: adidas
+        isCorrect: 0
+      - answerText: to give
+        isCorrect: 1
+    - questionText: path,r( patro,j( o`
+      wordFreq: 413
+      Highlighted: 0
+      answers:
+      - answerText: father
+        isCorrect: 1
+      - answerText: mother
+        isCorrect: 0
+      - answerText: son
+        isCorrect: 0
+    - questionText: h`me,ra( &aj( h`
+      wordFreq: 389
+      Highlighted: 1
+      answers:
+      - answerText: day
+        isCorrect: 1
+      - answerText: spirit
+        isCorrect: 0
+      - answerText: night
+        isCorrect: 0
+    - questionText: pneu/ma( &toj( to,
+      wordFreq: 379
+      Highlighted: 1
+      answers:
+      - answerText: spirit
+        isCorrect: 1
+      - answerText: new
+        isCorrect: 0
+      - answerText: now
+        isCorrect: 0
+  - name: Round6
+    EnemyHP: 100
+    PlayerHP: 50
+    timeLimitInSeconds: 120
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: pneu/ma( &toj( to,
+      wordFreq: 379
+      Highlighted: 0
+      answers:
+      - answerText: spirit
+        isCorrect: 1
+      - answerText: day
+        isCorrect: 0
+      - answerText: night
+        isCorrect: 0
+    - questionText: ui`o,j( &ou/( o`
+      wordFreq: 377
+      Highlighted: 0
+      answers:
+      - answerText: sun
+        isCorrect: 0
+      - answerText: hero
+        isCorrect: 0
+      - answerText: son
+        isCorrect: 1
+    - questionText: ei-j( mi,a( e[n
+      wordFreq: 345
+      Highlighted: 1
+      answers:
+      - answerText: one
+        isCorrect: 1
+      - answerText: into
+        isCorrect: 0
+      - answerText: his
+        isCorrect: 0
+    - questionText: avdelfo,j( &ou/( o`
+      wordFreq: 343
+      Highlighted: 0
+      answers:
+      - answerText: brother
+        isCorrect: 1
+      - answerText: delta
+        isCorrect: 0
+      - answerText: sister
+        isCorrect: 0
+    - questionText: h]
+      wordFreq: 343
+      Highlighted: 1
+      answers:
+      - answerText: the
+        isCorrect: 0
+      - answerText: or
+        isCorrect: 1
+      - answerText: who
+        isCorrect: 0
+    - questionText: eva,n
+      wordFreq: 333
+      Highlighted: 0
+      answers:
+      - answerText: earn
+        isCorrect: 0
+      - answerText: if
+        isCorrect: 1
+      - answerText: one
+        isCorrect: 0
+    - questionText: peri,
+      wordFreq: 333
+      Highlighted: 1
+      answers:
+      - answerText: with
+        isCorrect: 0
+      - answerText: circle
+        isCorrect: 0
+      - answerText: about/around
+        isCorrect: 1
+    - questionText: lo,goj( &ou( o`
+      wordFreq: 330
+      Highlighted: 0
+      answers:
+      - answerText: God
+        isCorrect: 0
+      - answerText: icon
+        isCorrect: 0
+      - answerText: word
+        isCorrect: 1
+    - questionText: e`autou/( &h/j
+      wordFreq: 319
+      Highlighted: 1
+      answers:
+      - answerText: his/her/their
+        isCorrect: 0
+      - answerText: oneself
+        isCorrect: 1
+      - answerText: this
+        isCorrect: 0
+    - questionText: oi=da
+      wordFreq: 318
+      Highlighted: 0
+      answers:
+      - answerText: to know
+        isCorrect: 1
+      - answerText: oil
+        isCorrect: 0
+      - answerText: to see
+        isCorrect: 0
+  - name: Round7
+    EnemyHP: 100
+    PlayerHP: 50
+    timeLimitInSeconds: 120
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: lale,w
+      wordFreq: 296
+      Highlighted: 1
+      answers:
+      - answerText: you
+        isCorrect: 0
+      - answerText: with
+        isCorrect: 0
+      - answerText: to speak, talk, say
+        isCorrect: 1
+    - questionText: ouvrano,j( &ou/( o`
+      wordFreq: 273
+      Highlighted: 0
+      answers:
+      - answerText: heaven
+        isCorrect: 1
+      - answerText: oral
+        isCorrect: 0
+      - answerText: to see
+        isCorrect: 0
+    - questionText: maqhth,j( &ou( o`
+      wordFreq: 261
+      Highlighted: 0
+      answers:
+      - answerText: mother
+        isCorrect: 0
+      - answerText: sin
+        isCorrect: 0
+      - answerText: disciple
+        isCorrect: 1
+    - questionText: lamba,nw
+      wordFreq: 258
+      Highlighted: 0
+      answers:
+      - answerText: to take, receive
+        isCorrect: 1
+      - answerText: to enter
+        isCorrect: 0
+      - answerText: to repeat
+        isCorrect: 0
+    - questionText: gh/( gh/j( h`
+      wordFreq: 250
+      Highlighted: 1
+      answers:
+      - answerText: woman
+        isCorrect: 0
+      - answerText: earth, ground
+        isCorrect: 1
+      - answerText: gas
+        isCorrect: 0
+    - questionText: evkei/noj( &h( &o
+      wordFreq: 243
+      Highlighted: 0
+      answers:
+      - answerText: other
+        isCorrect: 0
+      - answerText: that
+        isCorrect: 1
+      - answerText: empty
+        isCorrect: 0
+    - questionText: me,gaj( mega,lh( me,ga
+      wordFreq: 243
+      Highlighted: 1
+      answers:
+      - answerText: mega
+        isCorrect: 0
+      - answerText: after
+        isCorrect: 0
+      - answerText: great, large
+        isCorrect: 1
+    - questionText: pi,stij( &ewj( h`
+      wordFreq: 243
+      Highlighted: 0
+      answers:
+      - answerText: faith, trust, belief
+        isCorrect: 1
+      - answerText: please
+        isCorrect: 0
+      - answerText: son
+        isCorrect: 0
+    - questionText: pisteu,w
+      wordFreq: 241
+      Highlighted: 1
+      answers:
+      - answerText: rely
+        isCorrect: 0
+      - answerText: religion
+        isCorrect: 1
+      - answerText: to believe, trust, have faith
+        isCorrect: 0
+    - questionText: ouvdei,j( ouvdemi,a( ouvde,n
+      wordFreq: 234
+      Highlighted: 1
+      answers:
+      - answerText: no one, nothing
+        isCorrect: 1
+      - answerText: when
+        isCorrect: 0
+      - answerText: ought
+        isCorrect: 0
+  - name: Round8
+    EnemyHP: 100
+    PlayerHP: 50
+    timeLimitInSeconds: 120
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: a[gioj( &a( &on
+      wordFreq: 233
+      Highlighted: 1
+      answers:
+      - answerText: door
+        isCorrect: 0
+      - answerText: well known
+        isCorrect: 0
+      - answerText: holy
+        isCorrect: 1
+    - questionText: avpokri,nomai
+      wordFreq: 231
+      Highlighted: 0
+      answers:
+      - answerText: comment
+        isCorrect: 0
+      - answerText: judge
+        isCorrect: 0
+      - answerText: answer
+        isCorrect: 1
+    - questionText: o;noma( &toj( to,
+      wordFreq: 230
+      Highlighted: 0
+      answers:
+      - answerText: name
+        isCorrect: 1
+      - answerText: law
+        isCorrect: 0
+      - answerText: heaven
+        isCorrect: 0
+    - questionText: ginw,skw
+      wordFreq: 222
+      Highlighted: 1
+      answers:
+      - answerText: to know
+        isCorrect: 1
+      - answerText: to be/being
+        isCorrect: 0
+      - answerText: to exercise
+        isCorrect: 0
+    - questionText: u`po,
+      wordFreq: 220
+      Highlighted: 0
+      answers:
+      - answerText: above/over
+        isCorrect: 0
+      - answerText: by/under
+        isCorrect: 1
+      - answerText: excess
+        isCorrect: 0
+    - questionText: evxe,rcomai
+      wordFreq: 218
+      Highlighted: 0
+      answers:
+      - answerText: to find
+        isCorrect: 0
+      - answerText: to come / go out
+        isCorrect: 1
+      - answerText: to open
+        isCorrect: 0
+    - questionText: avnh,r( avndro,j( o`
+      wordFreq: 216
+      Highlighted: 0
+      answers:
+      - answerText: auntie
+        isCorrect: 0
+      - answerText: woman, wife
+        isCorrect: 0
+      - answerText: man, husband
+        isCorrect: 1
+    - questionText: gunh,( &aiko,j( h`
+      wordFreq: 215
+      Highlighted: 1
+      answers:
+      - answerText: woman, wife
+        isCorrect: 1
+      - answerText: man, husband
+        isCorrect: 0
+      - answerText: son
+        isCorrect: 0
+    - questionText: te,
+      wordFreq: 215
+      Highlighted: 1
+      answers:
+      - answerText: who
+        isCorrect: 0
+      - answerText: and
+        isCorrect: 1
+      - answerText: what
+        isCorrect: 0
+    - questionText: du,namai
+      wordFreq: 10
+      Highlighted: 0
+      answers:
+      - answerText: to be able, can
+        isCorrect: 1
+      - answerText: double
+        isCorrect: 0
+      - answerText: twice
+        isCorrect: 0
+  - name: Round9
+    EnemyHP: 100
+    PlayerHP: 50
+    timeLimitInSeconds: 150
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: ou[tw( ou;twj
+      wordFreq: 208
+      Highlighted: 1
+      answers:
+      - answerText: who
+        isCorrect: 0
+      - answerText: where
+        isCorrect: 0
+      - answerText: in this way/thus
+        isCorrect: 1
+    - questionText: qe,lw
+      wordFreq: 208
+      Highlighted: 0
+      answers:
+      - answerText: thristy
+        isCorrect: 0
+      - answerText: to love
+        isCorrect: 0
+      - answerText: to want, desire
+        isCorrect: 1
+    - questionText: ivdou,
+      wordFreq: 200
+      Highlighted: 0
+      answers:
+      - answerText: two
+        isCorrect: 0
+      - answerText: behold/look!
+        isCorrect: 1
+      - answerText: easy
+        isCorrect: 0
+    - questionText: vIoudai/oj( &a( &on
+      wordFreq: 195
+      Highlighted: 0
+      answers:
+      - answerText: Jewish
+        isCorrect: 1
+      - answerText: mother
+        isCorrect: 0
+      - answerText: change
+        isCorrect: 0
+    - questionText: eivse,rcomai
+      wordFreq: 194
+      Highlighted: 0
+      answers:
+      - answerText: to open
+        isCorrect: 0
+      - answerText: to come/go in
+        isCorrect: 1
+      - answerText: to hide
+        isCorrect: 0
+    - questionText: no,moj( &ou( o`
+      wordFreq: 194
+      Highlighted: 0
+      answers:
+      - answerText: normal
+        isCorrect: 0
+      - answerText: law
+        isCorrect: 1
+      - answerText: people
+        isCorrect: 0
+    - questionText: para,
+      wordFreq: 194
+      Highlighted: 1
+      answers:
+      - answerText: from; with, along
+        isCorrect: 1
+      - answerText: about/surround
+        isCorrect: 0
+    - questionText: gra,fw
+      wordFreq: 191
+      Highlighted: 0
+      answers:
+      - answerText: to write
+        isCorrect: 1
+      - answerText: to know
+        isCorrect: 0
+      - answerText: to hear
+        isCorrect: 0
+    - questionText: ko,smoj( &ou( o`
+      wordFreq: 186
+      Highlighted: 0
+      answers:
+      - answerText: cosmetic
+        isCorrect: 0
+      - answerText: world/universe
+        isCorrect: 1
+      - answerText: normal
+        isCorrect: 0
+    - questionText: kaqw,j
+      wordFreq: 182
+      Highlighted: 1
+      answers:
+      - answerText: as/just as
+        isCorrect: 1
+      - answerText: good
+        isCorrect: 0
+      - answerText: bad
+        isCorrect: 0
+  - name: Round10
+    EnemyHP: 100
+    PlayerHP: 50
+    timeLimitInSeconds: 180
+    pointsAddedForCorrectAnswer: 10
+    questions:
+    - questionText: me,n
+      wordFreq: 179
+      Highlighted: 1
+      answers:
+      - answerText: men
+        isCorrect: 0
+      - answerText: until
+        isCorrect: 0
+      - answerText: 'particle showing: contrast, emphasis'
+        isCorrect: 1
+    - questionText: cei/r( ceiro,j( h`
+      wordFreq: 177
+      Highlighted: 0
+      answers:
+      - answerText: mouth
+        isCorrect: 0
+      - answerText: oral
+        isCorrect: 0
+      - answerText: hand
+        isCorrect: 1
+    - questionText: eu`ri,skw
+      wordFreq: 176
+      Highlighted: 0
+      answers:
+      - answerText: to come
+        isCorrect: 0
+      - answerText: to find/discover
+        isCorrect: 1
+      - answerText: to believe
+        isCorrect: 0
+    - questionText: a;ggeloj( &ou( o`
+      wordFreq: 175
+      Highlighted: 0
+      answers:
+      - answerText: angel
+        isCorrect: 1
+      - answerText: angle
+        isCorrect: 0
+      - answerText: anger
+        isCorrect: 0
+    - questionText: o;cloj( &ou( o`
+      wordFreq: 175
+      Highlighted: 0
+      answers:
+      - answerText: across
+        isCorrect: 0
+      - answerText: crowd
+        isCorrect: 1
+      - answerText: cow
+        isCorrect: 0
+    - questionText: a`marti,a( &aj( h`
+      wordFreq: 173
+      Highlighted: 0
+      answers:
+      - answerText: disciple
+        isCorrect: 0
+      - answerText: sin
+        isCorrect: 1
+      - answerText: witness
+        isCorrect: 0
+    - questionText: e;rgon( &ou( to,
+      wordFreq: 169
+      Highlighted: 1
+      answers:
+      - answerText: error
+        isCorrect: 0
+      - answerText: earn
+        isCorrect: 0
+      - answerText: work/deed
+        isCorrect: 1
+    - questionText: a;n
+      wordFreq: 166
+      Highlighted: 0
+      answers:
+      - answerText: particle showing uncertainity
+        isCorrect: 1
+      - answerText: mother
+        isCorrect: 0
+      - answerText: woman
+        isCorrect: 0
+    - questionText: do,za( &hj( h`
+      wordFreq: 166
+      Highlighted: 1
+      answers:
+      - answerText: glory
+        isCorrect: 1
+      - answerText: watches
+        isCorrect: 0
+      - answerText: away
+        isCorrect: 0
+    - questionText: po,lij( &ewj( h
+      wordFreq: 163
+      Highlighted: 1
+      answers:
+      - answerText: city
+        isCorrect: 1
+      - answerText: many
+        isCorrect: 0
+      - answerText: like
+        isCorrect: 0
+  RoundNum: 0
+  LevelR: 0
+  finalScore: 0
+--- !u!4 &1562324276
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562324274}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1618638737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1618638740}
+  - component: {fileID: 1618638739}
+  - component: {fileID: 1618638738}
+  m_Layer: 0
+  m_Name: MusicPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1618638738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618638737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0d26c34d194c934ab6b7a5520cf93bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!82 &1618638739
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618638737}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1618638740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618638737}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 570, y: 320.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
